@@ -29,8 +29,11 @@ class User extends Authenticatable
         return $this->belongsTo('App\Role');
     }
 
+    /**
+     * @return mixed
+     */
     public function photo(){
-        return $this->bolongsTo('App\Photo');
+        return $this->belongsTo('App\Photo');
     }
 
 }
